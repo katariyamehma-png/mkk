@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Dwell — Minimalist Home Design Guide for Small &amp; Large Homes</title>
+  <meta name="description" content="Puzzled about how to design or build your home? Get tailored ideas for small and large homes, color combinations, room setup guides, global architectural styles, and multilingual inspiration." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>Atelier Dwell</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">
+        Menu
+      </button>
+
+      <nav class="site-nav" id="primary-nav" data-site-nav aria-label="Primary Navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/color-combinations.html">Color Combinations</a>
+        <a href="pages/home-setup.html">How to Set Home</a>
+        <a href="pages/styles.html">Global Styles</a>
+        <a href="pages/inspiration.html">World Inspiration</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Home Architecture &amp; Interior Guide</span>
+          <h1>Puzzled about how to build or design your home?</h1>
+          <p class="hero-lead">
+            Whether your home is compact or spacious, tell us your size and lifestyle. Explore clear spatial ideas, curated color combinations, practical furniture setup guides, and architectural styles from every corner of the world.
+          </p>
+          <div class="hero-actions">
+            <a href="#home-advisor" class="btn btn-primary">Ask: How to Design My Home?</a>
+            <a href="pages/styles.html" class="btn btn-outline">Explore Global Styles</a>
+          </div>
+          <div class="hero-metrics">
+            <div>
+              <div class="metric-value">Small &amp; Large</div>
+              <div class="metric-label">Tailored size planning</div>
+            </div>
+            <div>
+              <div class="metric-value">24+ Styles</div>
+              <div class="metric-label">Cultures &amp; eras</div>
+            </div>
+            <div>
+              <div class="metric-value">24 Languages</div>
+              <div class="metric-label">Global inspiration demo</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Minimalist Architectural Line Art -->
+        <div class="hero-visual" aria-label="Minimalist architectural home proportion diagram">
+          <svg viewBox="0 0 420 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimalist small and large home floorplan comparison">
+            <rect x="0" y="0" width="420" height="290" fill="#faf9f6" rx="10" />
+            <!-- Small Home Proportion -->
+            <rect x="28" y="60" width="145" height="175" fill="#ffffff" stroke="#1c1f1d" stroke-width="1.8" />
+            <path d="M 22 60 L 100.5 22 L 179 60" fill="none" stroke="#a65d3b" stroke-width="2" />
+            <rect x="46" y="88" width="52" height="58" fill="#eaf0ec" stroke="#4c6457" stroke-width="1.2" />
+            <rect x="112" y="88" width="44" height="44" fill="#f5ebe6" stroke="#a65d3b" stroke-width="1.2" />
+            <line x1="46" y1="185" x2="156" y2="185" stroke="#5d635e" stroke-dasharray="4 3" />
+            <text x="100" y="258" text-anchor="middle" font-size="11" fill="#5d635e">Small Home: Light &amp; Verticality</text>
+
+            <!-- Large Home Proportion -->
+            <rect x="205" y="75" width="190" height="160" fill="#ffffff" stroke="#1c1f1d" stroke-width="1.8" />
+            <path d="M 198 75 L 300 28 L 402 75" fill="none" stroke="#1c1f1d" stroke-width="2" />
+            <rect x="224" y="102" width="68" height="92" fill="#f2efe9" stroke="#cbc4b6" stroke-width="1.2" />
+            <rect x="308" y="102" width="68" height="46" fill="#eaf0ec" stroke="#4c6457" stroke-width="1.2" />
+            <rect x="308" y="160" width="68" height="34" fill="#f5ebe6" stroke="#a65d3b" stroke-width="1.2" />
+            <text x="300" y="258" text-anchor="middle" font-size="11" fill="#5d635e">Large Home: Zoning &amp; Warmth</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive "Tell Us: How to Design My Home?" Section -->
+    <section class="section section-alt" id="home-advisor">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Interactive Planner</span>
+          <h2>Tell us: How should I design my home?</h2>
+          <p>Select your home size, choose how you live, and ask any layout or design question for instant, practical architectural and interior guidance.</p>
+        </div>
+
+        <div class="advisor-shell">
+          <form class="card advisor-form" onsubmit="return false;">
+            <div>
+              <span class="field-label">1. What size is your home?</span>
+              <div class="size-cards">
+                <button type="button" class="size-option is-active" data-size-choice="small">
+                  <strong>Small</strong>
+                  <span>&lt; 850 sq ft</span>
+                </button>
+                <button type="button" class="size-option" data-size-choice="medium">
+                  <strong>Medium</strong>
+                  <span>850–1,800 sq ft</span>
+                </button>
+                <button type="button" class="size-option" data-size-choice="large">
+                  <strong>Large</strong>
+                  <span>1,800+ sq ft</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="field-label" for="advisor-focus">2. What matters most in your daily life?</label>
+              <select class="select" id="advisor-focus">
+                <option value="calm-minimal">Calm &amp; Clutter-Free Minimalism</option>
+                <option value="family-friendly">Family-Friendly &amp; Durable</option>
+                <option value="work-from-home">Quiet Work-From-Home Focus</option>
+                <option value="entertaining">Warm Hosting &amp; Entertaining</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="field-label" for="advisor-question">3. Ask your home design puzzle (optional)</label>
+              <textarea
+                class="textarea"
+                id="advisor-question"
+                rows="3"
+                placeholder="Example: My studio has low daylight and needs storage, or my large living room feels empty and cold..."
+              ></textarea>
+            </div>
+
+            <button type="submit" id="advisor-submit" class="btn btn-accent">
+              Get Tailored Home Design Ideas
+            </button>
+          </form>
+
+          <div class="advisor-output" id="advisor-output" aria-live="polite">
+            <!-- Populated dynamically by js/main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Essential Guide Links: Color Combinations & How to Set Your Home -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Essential Guides</span>
+          <h2>Colors &amp; Home Arrangement</h2>
+          <p>Jump straight into our dedicated guides for choosing harmonious paint &amp; material combinations or setting up furniture room by room.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card card-interactive feature-link-card">
+            <div>
+              <span class="tag tag-accent">Color Combinations Link</span>
+              <h3 style="margin-top: 12px;">Color Combination Ideas</h3>
+              <p>
+                Discover curated 4-color palettes tailored for small bright spaces or large warm interiors—complete with one-click hex codes and an interactive room color previewer.
+              </p>
+              <div class="swatch-strip" aria-hidden="true">
+                <span class="swatch-dot" style="background:#F5F2EB;"></span>
+                <span class="swatch-dot" style="background:#D6BE9B;"></span>
+                <span class="swatch-dot" style="background:#8FA395;"></span>
+                <span class="swatch-dot" style="background:#A85D42;"></span>
+                <span class="swatch-dot" style="background:#2A4765;"></span>
+              </div>
+            </div>
+            <div>
+              <a class="btn btn-primary" href="pages/color-combinations.html">Open Color Combination Ideas &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card card-interactive feature-link-card">
+            <div>
+              <span class="tag tag-sage">Home Setup Link</span>
+              <h3 style="margin-top: 12px;">How to Set Your Home</h3>
+              <p>
+                Step-by-step furniture placement rules, walkway clearances, visual floorplan diagrams, and interactive checklists for studios, living rooms, bedrooms, kitchens, and entryways.
+              </p>
+            </div>
+            <div>
+              <a class="btn btn-primary" href="pages/home-setup.html">Open Home Setup Guide &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Architectural & Interior Styles Preview -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="eyebrow">Countries, Cultures &amp; Time Periods</span>
+            <h2>Architectural &amp; Interior Styles Across the World</h2>
+            <p style="margin-bottom: 0; max-width: 64ch;">
+              From Ancient Greco-Roman columns and Moroccan Riads to Japanese Wabi-Sabi, Indian Havelis, Scandinavian Hygge, Bauhaus, and Afro-Minimalism.
+            </p>
+          </div>
+          <a class="btn btn-outline" href="pages/styles.html">Browse All 24 Styles &rarr;</a>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="tag-row">
+              <span class="tag tag-accent">Japan</span>
+              <span class="tag">Traditional – Present</span>
+            </div>
+            <h3>Japanese Wabi-Sabi &amp; Japandi</h3>
+            <p style="font-size: 0.92rem;">Natural timber, sliding shoji screens, and uncluttered breathing room ideal for serene small or large homes.</p>
+          </article>
+
+          <article class="card">
+            <div class="tag-row">
+              <span class="tag tag-accent">Morocco &amp; India</span>
+              <span class="tag">17th–19th Century &amp; Medieval</span>
+            </div>
+            <h3>Courtyard Riad &amp; Haveli</h3>
+            <p style="font-size: 0.92rem;">Shaded verandas, carved wooden pillars, cool lime plaster, and zellige or stone courtyards built for light and airflow.</p>
+          </article>
+
+          <article class="card">
+            <div class="tag-row">
+              <span class="tag tag-accent">Europe &amp; Americas</span>
+              <span class="tag">Classical – 20th Century</span>
+            </div>
+            <h3>Cycladic, Parisian &amp; Bauhaus</h3>
+            <p style="font-size: 0.92rem;">Compare sunlit Greek whitewashed arches, French herringbone moldings, and clean Mid-Century &amp; Bauhaus geometry.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multilingual Inspiration Demo + Blank Listen Section -->
+    <section class="section" id="inspiration-demo">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <span class="eyebrow">Every Language Inspiration Demo</span>
+            <h2>Design Inspiration in Every Language</h2>
+            <p style="margin-bottom: 0;">Select any language to preview a home-design reflection in its native script.</p>
+          </div>
+          <a class="text-link" href="pages/inspiration.html">View All 24 Languages &rarr;</a>
+        </div>
+
+        <div class="inspiration-grid">
+          <div class="quote-stage">
+            <div>
+              <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:14px;">
+                <label class="field-label" for="inspiration-lang-select" style="margin:0;">Choose Language</label>
+                <select class="select" id="inspiration-lang-select" style="max-width: 280px;"></select>
+              </div>
+              <div class="chip-group" id="inspiration-lang-chips" style="margin-bottom: 18px;"></div>
+              <div id="inspiration-meta" style="font-size: 0.84rem; color: var(--accent); font-weight: 600; margin-bottom: 10px;"></div>
+              <blockquote class="quote-text" id="inspiration-quote"></blockquote>
+            </div>
+            <div class="quote-translation" id="inspiration-meaning"></div>
+          </div>
+
+          <!-- Listen Section Intentionally Kept Blank for Now -->
+          <aside class="listen-blank-box" aria-label="Audio Inspiration Section">
+            <span class="eyebrow">Listen to Inspiration</span>
+            <h3 style="margin-bottom: 6px;">Audio Section</h3>
+            <div class="listen-blank-space" aria-hidden="true"></div>
+            <p style="font-size: 0.9rem; margin-bottom: 0;">
+              If you would like to listen to the inspiration, please note that <strong>for now this section is kept blank</strong>.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong style="color:var(--text);">Atelier Dwell</strong> &mdash; Minimalist Home Design &amp; Global Architecture Guide.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="pages/color-combinations.html">Color Combinations</a>
+        <a href="pages/home-setup.html">How to Set Home</a>
+        <a href="pages/styles.html">Global Styles</a>
+        <a href="pages/inspiration.html">World Inspiration</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/inspiration.js"></script>
+</body>
+</html>
